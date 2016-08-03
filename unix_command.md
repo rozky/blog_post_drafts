@@ -18,3 +18,11 @@ sample output:
 962.49 MB /usr/bin/java 
 341.03 MB /usr/bin/java 
 ```
+
+#### How to keep a process running in background after ending a ssh session
+
+```
+screen java -jar <JAR_NAME>
+```
+then to leave the screen press `CRTL+A` followed by `d`. List all screens by `screen -ls` and attach to a specific screen `screen -r <SCREEN_ID>`
+
