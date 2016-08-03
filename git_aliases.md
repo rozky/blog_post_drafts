@@ -1,4 +1,8 @@
-#### sort branches by last commit data
+Useful git commands
+=================
+
+How to sort local branches by the last commit date
+---------------------------------
 
 I'm not very good at keeping my local branch list short and deleting branches not used anymore. As I jump from a branch to branch I can easily forget which branch I was working previously. If you are like me you will find the following command very useful:  
 
