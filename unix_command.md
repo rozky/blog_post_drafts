@@ -7,16 +7,14 @@ Memory Usage analyses
 ### How to find out processes consuming most of the system memory
 
 ```
-ps -eo rss,pid,user,command --sort -rss | head -n 10 | awk '{ hr=$1/1024 ; printf("%13.2f MB ",hr) } { for ( x=4 ; x<=5 ; x++ ) { printf("%s ",$x) } print "" }'
+ps -eo rss,vsz,user,pid,command --sort -rss | head -n 10 | awk '{ rss=$1/1024 ; vsz=$2/1024 ; printf("%13.2f MB %13.2f MB  ",rss, vsz) } { for ( x=4 ; x<=5 ; x++ ) { printf("%s ",$x) } print "" }'
 ``` 
 
 sample output:
 ```
-982.44 MB /usr/bin/java 
-963.39 MB /usr/bin/java 
-950.29 MB /usr/bin/java 
-962.49 MB /usr/bin/java 
-341.03 MB /usr/bin/java 
+         0.00 MB          0.00 MB  PID COMMAND
+       627.84 MB       3587.70 MB  1111 /usr/bin/java
+        74.25 MB        504.12 MB  2222 /usr/bin/ruby
 ```
 
 ### How to keep a process running in background after ending a ssh session
