@@ -1,3 +1,9 @@
+### Take heap dump using JMAP
+
+```
+jmap -dump:file=/tmp/app_1.`date +%Y%m%d`.hprof -F <PID>
+```
+
 ### get heapdump without jmap
 
 ```
