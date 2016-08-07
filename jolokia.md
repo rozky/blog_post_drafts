@@ -1,17 +1,16 @@
 jolokia
 =======
 
-### take the threads dump
+### Take the threads dump
 
 ```
 curl http://localhost:8080/jolokia/exec/java.lang:type=Threading/dumpAllThreads/true/true
 ```
 
-### take the headp dump 
+### Take the headp dump 
 ```
 http://localhost:8080/jolokia/exec/com.sun.management:type=HotSpotDiagnostic/dumpHeap/heap_dump.hprof/true
 ```
-
 
 ### Command line tool `j4psh`
 
