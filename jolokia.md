@@ -16,4 +16,7 @@ If you don't know object names or commands name `j4psh` is great tool to explore
 j4psh http://localhost:8089/jolokia/
 ```
 
-opens a new shell then you can try `ls` or `cd com.sun.management` or `cd type=HotSpotDiagnostic`
+opens a new shell then you can try:
+  - `ls` 
+  - `cd com.sun.management` -> `ls` -> `cd type=HotSpotDiagnostic`
+  - `cd java.lang:type=Memory` -> `cat HeapMemoryUsage`
