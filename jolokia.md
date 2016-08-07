@@ -1,10 +1,15 @@
 jolokia
 =======
 
-### take thread dump
+### take the threads dump
 
 ```
 curl http://localhost:8080/jolokia/exec/java.lang:type=Threading/dumpAllThreads/true/true
+```
+
+### take the headp dump 
+```
+http://localhost:8080/jolokia/exec/com.sun.management:type=HotSpotDiagnostic/dumpHeap/heap_dump.hprof/true
 ```
 
 
