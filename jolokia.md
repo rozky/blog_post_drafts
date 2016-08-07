@@ -19,4 +19,4 @@ j4psh http://localhost:8089/jolokia/
 opens a new shell then you can try:
   - `ls` 
   - `cd com.sun.management` -> `ls` -> `cd type=HotSpotDiagnostic`
-  - `cd java.lang:type=Memory` -> `cat HeapMemoryUsage`
+  - `cd java.lang:type=Memory` -> `cat HeapMemoryUsage` or `exec findDeadlockedThreads` or `exec getThreadInfo([J) 3211`
