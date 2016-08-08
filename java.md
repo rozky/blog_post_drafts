@@ -1,3 +1,15 @@
+VisualVM
+-----------------
+
+### OQL examples
+
+```
+ select s from java.lang.String s where s.toString() == "org/springframework/web/servlet/view/freemarker/debug"
+```
+
+Heap dump
+----------------
+
 ### Take heap dump using JMAP
 
 ```
