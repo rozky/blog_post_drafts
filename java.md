@@ -16,6 +16,14 @@ Inefficient use of data structures, like keeping millions of empty lists or Hash
 select l from java.util.ArrayList l where l.size == 0 && l.modCount == 0
 ```
 
+```
+function emptyCollection(c) {
+  return c.size == 0;
+}
+
+filter(heap.objects('java.util.AbstractMap'), emptyCollection);
+```
+
 Heap dump
 ----------------
 
