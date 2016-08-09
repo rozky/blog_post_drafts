@@ -1,6 +1,9 @@
 List dependencies of a page
 
 ```
+apt-cache show <package_name>
+
+# or
 apt-cache showpkg <package_name>
 ```
 
