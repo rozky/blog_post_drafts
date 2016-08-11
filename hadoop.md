@@ -2,10 +2,10 @@ Hadoop
 ==========
 
 
+Prepare local hadoop:
+
 ```
 #!/bin/bash
-
-cd /usr/local/Cellar/hadoop/2.7.1/libexec/
 
 hdfs namenode -format
 sbin/start-dfs.sh
