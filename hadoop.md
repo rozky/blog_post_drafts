@@ -17,5 +17,5 @@ check data node at: `http://localhost:50070/`
 
 
 ```
-hdfs dfs -put ~/hadoop/zeno.log /user/local-user/
+bin/hdfs dfs -put ~/development/gumtree/hadoop_data/gt-web149-local4.log.bz2 /user/local-user/
 ```
