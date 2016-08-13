@@ -4,6 +4,7 @@ Run a job in IDEA without hadoop
 Navigate through `Run` -> `Edit Configurations...` and add a application configuration with the following settings:
 
 ***Main class:*** `com.twitter.scalding.Tool`
+
 ***Arguments:*** 
 ```
 <JOB_CLASS_NAME> 
