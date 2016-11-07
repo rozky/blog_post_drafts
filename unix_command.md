@@ -24,3 +24,12 @@ screen java -jar <JAR_NAME>
 ```
 then to leave the screen press `CRTL+A` followed by `d`. List all screens by `screen -ls` and attach to a specific screen `screen -r <SCREEN_ID>`
 
+
+Apt
+-------------
+
+### How to know the version of installed package
+
+```
+apt-cache policy <package name>
+```
