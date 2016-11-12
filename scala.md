@@ -12,6 +12,7 @@
 
 - http://perevillega.com/understanding-free-monads
 - http://blog.higher-order.com/blog/2013/08/20/free-monads-and-free-monoids/
+- http://polygonalhell.blogspot.co.uk/2014/12/scalaz-getting-to-grips-free-monad.html
 
 #### Libs
 
