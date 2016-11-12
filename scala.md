@@ -15,6 +15,7 @@
 #### Libs
 
 - https://github.com/ProjectSeptemberInc/freek
+- https://github.com/djspiewak/emm
 
 ### Peformance improvements
 
