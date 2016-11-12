@@ -11,6 +11,7 @@
 ### Free Monads
 
 - http://perevillega.com/understanding-free-monads
+- http://blog.higher-order.com/blog/2013/08/20/free-monads-and-free-monoids/
 
 #### Libs
 
