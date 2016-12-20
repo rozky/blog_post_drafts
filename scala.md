@@ -1,3 +1,7 @@
+### Trait
+
+- https://www.trivento.io/trait-linearization/
+
 ### ADT
 
 - http://noelwelsh.com/programming/2015/06/04/more-on-sealed/
