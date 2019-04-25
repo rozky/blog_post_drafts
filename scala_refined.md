@@ -12,7 +12,7 @@ import eu.timepit.refined.W
 import eu.timepit.refined.api.{RefType, Refined}
 import eu.timepit.refined.numeric.Interval
 
-case class PageSize(value: PageSizeNumber)
+final case class PageSize(value: PageSizeNumber)
 
 object PageSize {
   type PageSizeNumber = Refined[Int, Interval.Closed[W.`1`.T, W.`1000`.T]]
@@ -34,7 +34,7 @@ import eu.timepit.refined.collection.{Empty, MaxSize}
 import eu.timepit.refined.string.Trimmed
 import shapeless.{::, HNil}
 
-case class SessionToken(token: SessionTokenStr)
+final case class SessionToken(token: SessionTokenStr)
 
 object SessionToken {
   type SessionTokenStr = Refined[String, AllOf[Trimmed :: Not[Empty] :: MaxSize[W.`50`.T] :: HNil]]
