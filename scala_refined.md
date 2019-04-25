@@ -1,4 +1,13 @@
+Refined by examples
+===================
+
+
+## Create Refined value from string literal
+
 ```scala
+package com.roozky.matchbook.domain.model
+
+import com.roozky.matchbook.domain.model.PageSize.PageSizeNumber
 import eu.timepit.refined.W
 import eu.timepit.refined.api.{RefType, Refined}
 import eu.timepit.refined.numeric.Interval
