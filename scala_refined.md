@@ -11,3 +11,23 @@ object PageSize {
   val `1000` = PageSize(RefType.applyRefM[PageSizeNumber](1000))
 }
 ```
+
+## Combining predicates
+
+```scala
+package com.roozky.matchbook.domain.model
+
+import com.roozky.matchbook.domain.model.SessionToken.SessionTokenStr
+import eu.timepit.refined.W
+import eu.timepit.refined.api.Refined
+import eu.timepit.refined.boolean.{AllOf, Not}
+import eu.timepit.refined.collection.{Empty, MaxSize}
+import eu.timepit.refined.string.Trimmed
+import shapeless.{::, HNil}
+
+case class SessionToken(token: SessionTokenStr)
+
+object SessionToken {
+  type SessionTokenStr = Refined[String, AllOf[Trimmed :: Not[Empty] :: MaxSize[W.`50`.T] :: HNil]]
+}
+```
