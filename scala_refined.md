@@ -1,6 +1,10 @@
 Refined by examples
 ===================
 
+- https://kwark.github.io/refined-in-practice
+- http://fthomas.github.io/talks/2016-05-04-refined
+- https://vlovgr.github.io/refined-types/
+- https://underscore.io/blog/posts/2017/03/07/refined-data-config-database.html
 
 ## Create Refined value from string literal
 
