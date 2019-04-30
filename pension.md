@@ -4,3 +4,4 @@ https://www.trustnet.com/fund/price-performance/p/pension-funds?tab=fundOverview
 Pension fund performance:
 - old: https://www.trustnet.com/factsheets/p/zl57/zurich-aquila-6040-global-equity-index-pn-zp
 - new: https://www.bloomberg.com/quote/ZHA6CS1:LN
+- new new: https://www.trustnet.com/factsheets/p/n9cz/zurich-passive-multi-asset-iv-pn-cs3
