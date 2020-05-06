@@ -13,6 +13,21 @@ pd.set_option('display.max_columns', 20)
 pd.set_option('display.width', 700)
 ```
 
+### Explore data
+
+```python
+print(train.shape)
+
+# prints top 40 rows
+print(train.head(40).to_string())
+
+# prints basics stats about each column like: count, mean, std, min, max, 25% 75%
+print(train.describe())
+
+# count number of null/missing values in each column
+print(train.isnull().sum())
+```
+
 ### Drop Row / Column
 
 `axis=0` - drop row, default
