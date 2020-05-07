@@ -24,6 +24,9 @@ print(train.head(40).to_string())
 # prints basics stats about each column like: count, mean, std, min, max, 25% 75%
 print(train.describe())
 
+# single column basic stats
+train['Age'].describe()
+
 # count number of null/missing values in each column
 print(train.isnull().sum())
 ```
@@ -41,6 +44,26 @@ train.drop([0,1,2])
 
 # drop columns "PassengerId", "Survived"
 train.drop(columns = ["PassengerId", "Survived"], axis=1)
+```
 
 
+### Dataframe transformations
+
+```python
+# append dataframe to dataframe
+train.append(test, ignore_index=True)
+```
+
+### Column transformations
+
+```python
+# map column value to diff value
+train['Sex'] = train['Sex'].map({"male": 0, "female": 1}) 
+train['Embarked'] = train["Embarked"].map({"S": 0, "C": 1, "Q": 2})
+
+# apply custom function / lambda to column value
+train['Cabin'] = train['Cabin'].apply(lambda x: str(x)[0].upper())
+
+# merge 2 columns
+train['Family'] = train['SibSp'] + train['Parch']
 ```
