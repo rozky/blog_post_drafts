@@ -1,5 +1,6 @@
 # Python Pandas 
 
+- https://pypi.org/project/sklearn-pandas/1.5.0/
 
 ## Commonly used function examples
 
@@ -66,4 +67,22 @@ train['Cabin'] = train['Cabin'].apply(lambda x: str(x)[0].upper())
 
 # merge 2 columns
 train['Family'] = train['SibSp'] + train['Parch']
+```
+
+### Missing values
+
+```python
+# substituting null values with the most frequent value in that column
+# https://pypi.org/project/sklearn-pandas/1.5.0/
+g = CategoricalImputer()
+train['Embarked'] = cg.fit_transform(train['Embarked'].values.reshape(-1,1))
+
+# Imputation for completing missing values using k-Nearest Neighbors.
+knn_imputer = KNNImputer(n_neighbors=4)
+train.iloc[:, 5] = train.fit_transform(train.iloc[:,5].values.reshape(-1,1))
+
+# Transform features by scaling each feature to a given range
+mx = MinMaxScaler()
+train['Age'] = mx.fit_transform(train['Age'].values.reshape(-1,1))
+
 ```
