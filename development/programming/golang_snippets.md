@@ -20,3 +20,22 @@ if $VAL$, contains := $MAP$[$KEY$]; contains {
   </context>
 </template>
 ```
+
+## If error return error
+
+abbriviation: `ifere`
+
+```go
+if $ERR$ != nil {
+    return nil, $ERR$
+}
+```
+
+```xml
+<template name="ifere" value="if $ERR$ != nil {&#10;    return nil, $ERR$&#10;}" description="If error return error" toReformat="false" toShortenFQNames="true">
+  <variable name="ERR" expression="errorVariable()" defaultValue="&quot;err&quot;" alwaysStopAt="true" />
+  <context>
+    <option name="GO" value="true" />
+  </context>
+</template>
+```
