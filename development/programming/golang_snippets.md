@@ -42,7 +42,7 @@ if $ERR$ != nil {
 
 ## If error panic
 
-abbriviation: `ifp`
+abbriviation: `ifep`
 
 ```go
 if $ERR$ != nil {
