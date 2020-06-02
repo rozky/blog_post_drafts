@@ -39,3 +39,22 @@ if $ERR$ != nil {
   </context>
 </template>
 ```
+
+## If error panic
+
+abbriviation: `ifp`
+
+```go
+if $ERR$ != nil {
+    panic($ERR$)
+}
+```
+
+```xml
+<template name="ifep" value="if $ERR$ != nil {&#10;    panic($ERR$)&#10;}" description="If error panic" toReformat="false" toShortenFQNames="true">
+  <variable name="ERR" expression="errorVariable()" defaultValue="err" alwaysStopAt="true" />
+  <context>
+    <option name="GO" value="true" />
+  </context>
+</template>
+```
