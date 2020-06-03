@@ -58,3 +58,25 @@ if $ERR$ != nil {
   </context>
 </template>
 ```
+
+## Generate Sort (sortable, comparable) Interface implementation
+
+abbriviation: `sortable`
+
+```go
+// sort.Interface
+func ($ARG_NAME$ $ARG_TYPE$) Len() int { return len($ARG_NAME$) }
+func ($ARG_NAME$ $ARG_TYPE$) Less(i, j int) bool { return $ARG_NAME$[i] < $ARG_NAME$[j] }
+func ($ARG_NAME$ $ARG_TYPE$) Swap(i, j int) { $ARG_NAME$[i], $ARG_NAME$[j] = $ARG_NAME$[j], $ARG_NAME$[i] }
+```
+
+```xml
+<template name="sortable" value="// sort.Interface&#10;func ($ARG_NAME$ $ARG_TYPE$) Len() int { return len($ARG_NAME$) }&#10;func ($ARG_NAME$ $ARG_TYPE$) Less(i, j int) bool { return $ARG_NAME$[i] &lt; $ARG_NAME$[j] }&#10;func ($ARG_NAME$ $ARG_TYPE$) Swap(i, j int) { $ARG_NAME$[i], $ARG_NAME$[j] = $ARG_NAME$[j], $ARG_NAME$[i] }" description="Generate Sort (sortable, comparable) Interface implementation" toReformat="false" toShortenFQNames="true">
+  <variable name="ARG_NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+  <variable name="ARG_TYPE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="GO" value="true" />
+  </context>
+</template>
+```
+
